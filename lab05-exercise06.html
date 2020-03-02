@@ -21,8 +21,29 @@
          background-color: #362C42;
          color: #F2E0BD;
       }
-
-
+      caption {
+         margin-left: -2000px;
+      }
+      tbody span.yes:before {
+         content: url('images/yes.png');
+      }
+      tbody th {
+         text-align: right;
+         color: #1D1626;
+         background-color: #F2e0bd;
+      }
+      thead th:empty {
+         background-color: #ffffff;
+      }
+      tfoot, thead th:nth-last-child(1) {
+         color: #c74223;
+         text-shadow: 1px 1px 1px black;
+         font-weight: bold;
+      }
+      tfoot th {
+         background-color: #ffffff;
+         text-shador: none;
+      }
    </style>
 </head>
 <body>
@@ -66,14 +87,14 @@
       <tr>
         <th scope="row">Social Sharing</th>
         <td></td>
-        <td></td>
-        <td></td>
+        <td><span class='check'></span></td>
+        <td><span class='check'></span></td>
       </tr> 
       <tr>
         <th scope="row">Analytics</th>
         <td></td>
         <td></td>
-        <td></td>
+        <td><span class='yes'></span></td>
       </tr> 
    </tbody>
 
